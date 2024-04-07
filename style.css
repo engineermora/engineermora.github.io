@@ -180,16 +180,39 @@ aside a {
   color: var(--secondary-color);
 }
 
-\/* Estilos para pantallas pequeñas *\/
 @media only screen and (max-width: 600px) {
   body {
     font-size: 14px;
   }
 }
 
-\/* Estilos para pantallas medianas y grandes *\/
 @media only screen and (min-width: 601px) {
   body {
     font-size: 16px;
   }
+}
+.element {
+    width: 50%;
+    background-color: red;
+}
+
+@media (max-width: 800px) {
+    .element{
+        width: 100%;
+        background-color: blue;
+    }
+}
+/* If screen size is LESS than 1200px wide */
+@media (max-width: 1200px){ 
+        /* Styles! */
+}
+
+/* If screen size is MORE than 800px wide */
+@media (min-width: 800px){ 
+        /* Styles! */
+}
+
+/* If screen size is BETWEEN 320px and 768px wide AND the orientation is in landscape mode */
+@media (min-width: 320px) and (max-width: 768px) and (orientation: landscape) { 
+        /* Styles! */
 }
