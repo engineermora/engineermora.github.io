@@ -179,3 +179,17 @@ aside a {
   text-decoration: none;
   color: var(--secondary-color);
 }
+
+\/* Estilos para pantallas pequeñas *\/
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+\/* Estilos para pantallas medianas y grandes *\/
+@media only screen and (min-width: 601px) {
+  body {
+    font-size: 16px;
+  }
+}
