@@ -189,6 +189,115 @@ aside a {
 
 /* Punto de ruptura: TABLETS
 //////////////////////////// */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in;
+}
+html {
+    font: 16px sans-serif;
+    background-color: tan;
+}
+
+body * { padding: 0.5em; }
+
+body:after {
+    content: '· GRID Layout ·';
+    position: fixed;
+    top: 50%;
+    left: 40%;
+    transform: rotate(-45deg) scale(5);
+    color: rgba(255, 0, 0,0.1);
+    font-weight: 900;
+    z-index: -1;
+}
+
+header  { 
+    grid-area: cabecera;
+    background-color: rgba(0,0,0,0.1);
+}
+nav.menu     { 
+    grid-area: menu;
+    background-color: rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: flex-end;
+}
+.item-menu {
+    margin-right: 0.5em;
+    background-color: rgba(255,128,0,0.1);
+}
+.rayas {
+    font-size: 3em;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 25px;
+}
+.rayas:hover {
+    color: #fff;
+    cursor: pointer;
+}
+nav.mobile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    min-height: 100vh;
+    width: 150px;
+    transform: translateX(-150px);
+    background-color: rgba(0,0,0,0.7);
+}
+.item-mobile {
+    border-bottom: 1px solid #666;
+}
+nav.mostrar {
+    transform: translateX(0px);
+}
+section { 
+    grid-area: contenido;
+    background-color: rgba(0,0,0,0.1);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: start;
+}
+article {
+    flex: 1 50%;
+}
+aside   { 
+    grid-area: lateral;
+    background-color: rgba(0,0,0,0.1);
+}
+footer  { 
+    grid-area: pie;
+    background-color: rgba(0,0,0,0.1);
+}
+
+
+body {
+    max-width  : 1280px;
+    width      : calc(100% - 2em);
+    min-height : calc(100vh - 2em);
+    margin     : 1em auto;
+
+    display               : grid;
+    grid-template-columns : 1fr 1fr 5px 1fr;
+    grid-template-rows    : 100px 50px auto 50px;
+    grid-gap              : 0.5em;
+    grid-template-areas   :
+        "cabecera  cabecera  cabecera  cabecera"
+        "menu      menu      menu      menu"    
+        "contenido contenido .         lateral"
+        "pie       pie       pie       pie"
+    ;
+}
+
+/* RESPONSIVE DESING
+
+ */
+
+/* Punto de ruptura: TABLETS
+//////////////////////////// */
 @media all and (max-width: 768px){
     body {
         grid-template-columns : 75% 25%;
@@ -232,4 +341,3 @@ aside a {
         display: block;
     } 
 }
-
