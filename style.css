@@ -181,14 +181,7 @@ aside a {
 }
 
 /* RESPONSIVE DESING
-    - 1º) Desktops
-    - 2º) Tablets
-    - 3º) Smartphones
-    (dese ser este orden en CSS)
- */
-
-/* Punto de ruptura: TABLETS
-//////////////////////////// */
+    
 * {
     margin: 0;
     padding: 0;
@@ -340,4 +333,4 @@ body {
     .rayas {
         display: block;
     } 
-}
+}*/
