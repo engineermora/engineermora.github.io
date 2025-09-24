@@ -1,147 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="author" content="(cc) 3con14" />
-<link rel="stylesheet" href="./normalize.css">
-<link rel="stylesheet" type="text/css\" href="./style.css">
-<title>José Mora Currículum Vitae</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>José Mora | Cybersecurity Resume</title>
+  <style>
+    :root {
+      --primary-color: #ffffff; /* Background */
+      --secondary-color: #f4f6f9; /* Cards/Header */
+      --accent-color: #0056d2; /* Blue accents */
+      --text-color: #1a1a1a; /* Main text */
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: var(--primary-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--secondary-color);
+      padding: 2rem;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 2px solid #e0e0e0;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header h2 {
+      font-size: 1.2rem;
+      color: var(--accent-color);
+    }
+
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--accent-color);
+      margin-bottom: 1rem;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: var(--text-color);
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent-color);
+    }
+
+    section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: var(--accent-color);
+      border-bottom: 2px solid var(--accent-color);
+      display: inline-block;
+    }
+
+    .card {
+      background: var(--secondary-color);
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    ul {
+      list-style: none;
+      margin-left: 1rem;
+    }
+
+    li::before {
+      content: '➤';
+      color: var(--accent-color);
+      margin-right: 0.5rem;
+    }
+
+    footer {
+      background: var(--secondary-color);
+      text-align: center;
+      padding: 1rem;
+      color: #555;
+      font-size: 0.9rem;
+      border-top: 2px solid #e0e0e0;
+    }
+  </style>
 </head>
 <body>
-    <header> 
-        <br>
-        <h1>JOSÉ LUIS MORA ISAZA</h1>
-        <p> Cyber Security Consultant | Digital Transformer | Secure IT/OT convergence </p>
-        <br>
-        <br>
-    </header>
-    <main>
-        <div class="line">
-            <br>
-            <h2><span><i class="bi bi-chat-left-fill"></i></span> About EngineerMora</h2>
-            <p>José is a System Engineer from Unitecnar (Cartagena, Colombia) and has almost 6 years of experience as a Cyber Security Consultant. As a team member of a Cyber Security Operation Center, with experience as an Analyst tier 2 for more than 2 years to perform investigations of events and security incidents for manufacturing and banking clients and using tools like SIEM Splunk and Qradar, Crowdstrike's antivirus, and EDR with its different dashboards and internal SIEM to find out more details and using the button to connect to the devices connected to the network, or Crowdstrike's honey pot to analyze what is happening with each specific IOA/IOC. </p>
-            <P>He’s a Master's degree in Cyber security at Buenos Aires University (Buenos Aires, Argentina). Nowadays, He’s working in the Industrial field making consulting services to verify an organization's information security status and maturity level and supporting GCP&SO Cybersecurity Program deployment with focus on customer-facing compliance, cybersecurity practices and capabilities, incident detection and escalation, and vulnerability management, while actively participating in GCP&SO Cybersecurity Community and increasing local cybersecurity awareness. </p>
-            </P>
-            <p>With experience in protecting information in computer networks, online or cloud servers, payment software, and mobile devices, among others. With knowledge to design and develop projects, plans, programs, and security tools that support or automate some tasks to be performed. In addition to resolving incidents, control of infrastructure security, and the convergence of Cybersecurity for IT/OT.
-                Now, also within my scope at Schneider developing the EAA IT offer for Data centers and coolings.</p>
-            <!--  -->
-            <h2><span><i class="bi bi bi-briefcase-fill"></i></i></span>Professional Experience</h2>
-            <h3><span>2023</span><span></span>IT FORMATION</h3>
-            <h4>Cyber Security's Teacher</h4>
-            <ul>
-                <li>Activities & Accomplishments: Corporate training courses for IT companies in Spain, associated with the training company Formacion IT on various topics of cybersecurity, such as the introductory cycle of Cybersecurity and Cyber Security foundation professional certificate CSFPC of Certiprof.</li>
-            </ul>
-            <!--  -->
-            <p></p>        
-            <h3><span>2022 until now </span><span></span>Schneider Electric APU</h3>
-            <h4>Cyber Security Consultant & Services Champion APU.</h4>
-            <ul>
-                <li>Activities & Accomplishments: Build and design highly cyber security robust powers systems solutions for Industrial field users. Create opportunities and close business for Schneider Electric’s Cyber Security organization with OT/IT companies. Support from the cybersecurity area to the commercial force to materialize opportunities, all of them in Argentina, Paraguay, Uruguay y Chile. Among other provisions.</li>
-            </ul>    
-            <!--  -->
-            <h3><span>Jun.2021 - Dec.2021</span><span></span>Schneider Electric APU</h3>
-            <h4>Cyber Security Consultant and Product Architect Engineer.</h4>
-            <ul>
-                <li> Support from the cybersecurity area to the commercial force to materialize opportunities, all of then in Argentina, Paraguay, Urugay y Chile. Responsible for the development of CS services Business in Areas and accounts assigned, pipeline generation, the support of the sales effort providing technical recommendations and other input for the creation of CS technical proposals, and the tracking of all relevant CS opportunities throughout Areas and accounts assigned. </li>
-            </ul> 
-             <!--  -->
-             <h3><span>Sep.2019 – Jun.2021</span><span></span>Accenture Argentina</h3>
-             <h4>Security Operation Center Tier II</h4>
-             <ul>
-                 <li>Activities & Accomplishments: Vulnerability analysis, phishing, malware, investigation monitoring and creation of Service Now tickets for issues. With experience using SIEM : Splunk and Qradar, Abnormal, Falcon Crowdstrike EDR and antivirus and Service Now to open/close security investigations.</li>
-                 <li>Tools: Qradar, NETWINESS RSA, PRTG, Splunk, Crowdstrike EDR and Antivirus, Service Now and Abnormal.
-                    </li>
-                 </ul> 
-           <!--  -->
-           <h3><span>2014</span><span></span>Manuel Zapata Olivella University, Colombia</h3>
-           <h4>Teacher </h4>
-           <ul>
-               <li> Activities & Accomplishments: Developing the courses of introduction to computers and
-                   telecommunications, basic electronics, and computer networks for students of Computer
-                   Technology and Information Systems Technician.    </li>
-           </ul> 
-            <!--  -->
-             <h2><span><i class="bi bi-mortarboard-fill"></i></span>Education</h2>
-             <!--  -->
-             <h3><span>2023</span><span></span>Security Information Master’s degree </h3>
-             <p>Buenos Aires University - UBA</p>
-             <p>Buenos Aires, Argentina</p>
-             <!--  -->
-             <h3><span>2019</span><span></span>Security Information Specialist </h3>
-             <p>Buenos Aires University - UBA</p>
-             <p>Buenos Aires, Argentina</p>
-             <!--  -->
-             <h3><span>2014</span><span></span>System Engineer</h3>
-             <p> Fundación Tecnológica Antonio de Arévalo - UNITECNAR</p>
-             <p>Cartagena de Indias, Colombia</p>
-             <!--  -->
-             <h3><span>2012</span><span></span>System technologist</h3>
-             <p> Fundación Tecnológica Antonio de Arévalo - UNITECNAR</p>
-             <p>Cartagena de Indias, Colombia</p>
-             <!--  -->
-        </div>
-    </main>
-    <aside>
-        <h2><span><i class="bi bi-person-fill"></i></span>Personal information</h2>
-        <h3>Email:</h3>
-        <p>engineermora@gmail.com</p>
-        <h3>Home Country: </h3>
-        <p>Argentina</p>
-        <h3>Home City: </h3>
-        <p>Buenos Aires</p>
-        <h3>Github:</h3>
-        <p><a href="https://github.com/engineermora" target="_blank">https://github.com/engineermora</a></p>
-        <h3>LinkedIn:</h3>
-        <p><a href="https://www.linkedin.com/in/jose-mora-cybersecurity/" target="_blank">https://www.linkedin.com/in/jose-mora-cybersecurity/</a></p>
-        <!--  -->     
-        <h2><span><i class="bi bi-lightning-fill"></i></span>Certifications</h2>
-        <ul>
-            <li>Cyber Incident Response & Malware Analysis</li>
-            <li>Introduction to Cybersecurity</li>
-            <li>XVIII Congreso Internacional de Ciberseguridad Industrial en Latinoamérica 2022</li>
-            <li>Information Security  Certificated (UNITECNAR)</li>
-            <li>Social engineering and technology-free attacks</li>
-            <li>Cyber Network Security</li>
-            <li>Security Information Certificated</li>
-            <li>Advanced Penetration Testing</li>
-            <li>Cyber Security Foundation - CSFPC™</li>
-            <li>Scrum Foundation Professional Certification - SFPC™</li>
-            <li>Offensive Penetration Testing</li>
-            <li>CompTIA Security+: Social Engineering Techniques & Attack Types</li>
-            <li>Social Engineering Techniques & Attack Types</li>
-            <li>Sales Managers Fundamentals</li>
-            <li>Getting to know the different levels of communication</li>
-            <li>How do we conduct business ethically?</li>
-            <li>Selling Recurring Services for Power Services</li>
-        </ul>
-        <!--  -->
-        <h2><span><i class="bi bi-pc-display"></i></span>Skills, Tools & Frameworks</h2>
-        <ul>
-        <li>Operating Systems: IOS, Windows, Linux.</li>
-        <li>Programming Languages: Python, Java, JavaScript.</li>
-        <li>Analytics & Reporting Tools: Service Now</li>
-        <li>Databases: SQL, MongoDB</li>
-        <li>Methodologies, Lead/Management Skills: PHVA, Scrum, KAIZEN</li>
-        </ul>
-        <h3>Knowledge in the following standards</h3>
-        <ul>
-            <li>IEC 62443</li>
-            <li>ISO 27000</li>
-            <li>Cybook</li>
-            <li>NIST FrameWork</li>
-            <li>COBIT</li>
-            <li>IEEE 802.1X</li>
-            <li>NERC SIP </li>
-        </ul>
-        <h3>Written Papers</h3>
-        <ul>
-            <li>Digital transformation: Secure convergence between IT and OT networks.</li>
-            <p><a href="http://bibliotecadigital.econ.uba.ar/econ/collection/tpos/document/1502-2564_MoraIsazaJL" target="_blank">MSI Link</a></p>
-            <li>Cybersecurity: ransomware in OT environments.</li>
-            <p><a href="http://bibliotecadigital.econ.uba.ar/econ/collection/tpos/document/1502-2564_MoraIsazaJL" target="_blank">ESI Link</a></p>
-        </ul>
-    </aside>
-   </body>
+  <header>
+    <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+    <h1>José Luis Mora Isaza</h1>
+    <h2>Cyber Triage & Forensics Sr. Security Analyst</h2>
+    <nav>
+      <a href="#profile">Profile</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="profile">
+    <h3>Profile</h3>
+    <div class="card">
+      <p>Cybersecurity professional with 6+ years of experience in protecting critical systems and data. Specialized in incident response, forensics, and SOC operations with strong expertise in IT/OT convergence.</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h3>Knowledge & Skills</h3>
+    <div class="card">
+      <ul>
+        <li>Operating Systems: iOS, Windows, Linux</li>
+        <li>Programming: Python, Java, JavaScript</li>
+        <li>Tools: Splunk, NetWitness, Sentinel, XSOAR, Palo Alto, CrowdStrike, QRadar</li>
+        <li>Frameworks: NIST CSF, ISO 27001, CIS Controls</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h3>Professional Experience</h3>
+    <div class="card"><strong>EY GDS Argentina</strong> – Sr. Security Analyst (2024–Present)<br>Tier II analyst focusing on investigation, forensics, and incident response lifecycle.</div>
+    <div class="card"><strong>IT Formation</strong> – Cybersecurity Tutor (2023–2024)<br>Delivered training on cybersecurity fundamentals and awareness.</div>
+    <div class="card"><strong>Schneider Electric APU</strong> – Cybersecurity Consultant (2021–2024)<br>Developed cybersecurity opportunities in LATAM with IT/OT convergence.</div>
+    <div class="card"><strong>Accenture Argentina</strong> – Security Analyst (2019–2021)<br>Vulnerability analysis, malware investigation, SOC monitoring.</div>
+  </section>
+
+  <section id="certifications">
+    <h3>Certifications</h3>
+    <div class="card">
+      <p>CompTIA Security+, Offensive Penetration Testing, Microsoft Security Operations, Cyber Security Foundation (CSFPC™), and more.</p>
+    </div>
+  </section>
+
+  <section id="education">
+    <h3>Education</h3>
+    <div class="card">
+      <ul>
+        <li>MSc Information Security – UBA, Argentina (2023)</li>
+        <li>Specialist in Information Security – UBA (2019)</li>
+        <li>BSc Systems Engineering – Unitecnar, Colombia (2018)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h3>Contact</h3>
+    <div class="card">
+      <p>Email: <a href="mailto:engineermora@gmail.com">engineermora@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/jose-mora-cybersecurity/">jose-mora-cybersecurity</a></p>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 José Mora – Cybersecurity Specialist
+  </footer>
+</body>
 </html>
