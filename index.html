@@ -1,239 +1,172 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>José Luis Mora | Cybersecurity Specialist</title>
+  <title>José Luis Mora | Cybersecurity Analyst</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <style>
+    /* Variables de color */
     :root {
-      --primary-bg: #ffffff;
-      --secondary-bg: #f4f6f9;
-      --accent-color: #228B22; /* Verde */
-      --accent-light: #32CD32;
-      --text-color: #1a1a1a;
+      --bg-color: #121212;
+      --card-bg: #1e1e1e;
+      --accent-color: #32CD32;
+      --text-color: #e0e0e0;
+      --link-color: #32CD32;
+      --hover-color: #228B22;
     }
 
+    /* Estilos generales */
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Roboto', sans-serif;
     }
 
     body {
-      background: var(--primary-bg);
+      background-color: var(--bg-color);
       color: var(--text-color);
       line-height: 1.6;
+      padding: 20px;
     }
 
+    a {
+      color: var(--link-color);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: var(--hover-color);
+    }
+
+    /* Header */
     header {
-      background: var(--secondary-bg);
-      padding: 2rem;
       text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      border-bottom: 2px solid #e0e0e0;
+      margin-bottom: 40px;
     }
 
     header h1 {
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
+      font-size: 2.5rem;
+      color: var(--accent-color);
     }
 
     header h2 {
       font-size: 1.2rem;
-      color: var(--accent-color);
-      margin-bottom: 1rem;
-    }
-
-    .profile-pic {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 3px solid var(--accent-color);
-      margin-bottom: 1rem;
-    }
-
-    nav {
-      margin-top: 1rem;
-    }
-
-    nav a {
-      margin: 0 1rem;
-      text-decoration: none;
       color: var(--text-color);
-      transition: color 0.3s;
-      font-weight: bold;
     }
 
-    nav a:hover {
+    /* Sección de perfil */
+    #profile {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+
+    #profile img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      margin-right: 20px;
+    }
+
+    #profile div {
+      max-width: 600px;
+    }
+
+    /* Sección de habilidades */
+    #skills {
+      margin-bottom: 40px;
+    }
+
+    #skills h3 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
       color: var(--accent-color);
     }
 
-    /* Hero section */
-    #hero {
-      background: var(--accent-color);
-      color: #fff;
-      padding: 5rem 2rem;
-      text-align: center;
+    #skills ul {
+      list-style: none;
     }
 
-    #hero h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
+    #skills li {
+      margin-bottom: 10px;
     }
 
-    #hero p {
-      font-size: 1.1rem;
-      margin-bottom: 2rem;
+    /* Sección de proyectos */
+    #projects {
+      margin-bottom: 40px;
     }
 
-    #hero .btn {
-      display: inline-block;
-      padding: 0.75rem 1.5rem;
-      background-color: var(--accent-light);
-      color: #fff;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background 0.3s;
-    }
-
-    #hero .btn:hover {
-      background-color: #228B22;
-    }
-
-    section {
-      padding: 4rem 2rem;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    section h3 {
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
+    #projects h3 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
       color: var(--accent-color);
-      border-bottom: 2px solid var(--accent-color);
-      display: inline-block;
-      padding-bottom: 0.2rem;
     }
 
-    .card {
-      background: var(--secondary-bg);
-      padding: 1.5rem;
-      margin-bottom: 1.5rem;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      transition: transform 0.3s;
+    #projects .project {
+      background-color: var(--card-bg);
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
     }
 
-    .card:hover {
+    #projects .project:hover {
       transform: translateY(-5px);
     }
 
-    ul {
-      list-style: none;
-      margin-left: 1rem;
+    #projects .project h4 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
     }
 
-    li::before {
-      content: '➤';
-      color: var(--accent-color);
-      margin-right: 0.5rem;
+    #projects .project p {
+      margin-bottom: 10px;
     }
 
+    /* Footer */
     footer {
-      background: var(--secondary-bg);
       text-align: center;
-      padding: 1rem;
-      color: #555;
+      margin-top: 40px;
       font-size: 0.9rem;
-      border-top: 2px solid #e0e0e0;
-    }
-
-    a {
-      color: var(--accent-color);
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
+      color: var(--text-color);
     }
   </style>
 </head>
 <body>
-  <!-- Hero Section -->
-  <section id="hero">
-    <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
-    <h2>José Luis Mora Isaza</h2>
-    <p>Cyber Triage & Forensics Sr. Security Analyst | SOC Tier 2 | Cybersecurity Consultant | MSc in Information Security</p>
-    <a href="https://www.linkedin.com/in/jose-mora-cybersecurity/" target="_blank" class="btn">Connect on LinkedIn</a>
-  </section>
 
-  <!-- Profile -->
+  <header>
+    <h1>José Luis Mora Isaza</h1>
+    <h2>Cyber Security Analyst </h2>
+  </header>
+
   <section id="profile">
-    <h3>Profile</h3>
-    <div class="card">
-      <p>Cybersecurity Analyst with over 6 years of experience in cyber triage, incident response, and malware analysis. Skilled in threat detection, investigation, and mitigation, leveraging MITRE ATT&CK, SIEM, SOAR, and other tools to strengthen security operations.</p>
-    </div>
-  </section>
-
-  <!-- Skills -->
-  <section id="skills">
-    <h3>Knowledge & Skills</h3>
-    <div class="card">
-      <ul>
-        <li>Operating Systems: iOS, Windows, Linux</li>
-        <li>Cyber Security Tools: xSOAR, SIEM, CrowdStrike, Sentinel, Splunk, Microsoft Defender, Azure Security Center</li>
-        <li>Cloud: Azure, AWS</li>
-        <li>Languages: Python, Java, JavaScript, Bash, PowerShell, KQL</li>
-        <li>Frameworks: ISO 27000, SOC2, PCI-DSS, GDPR, PDCA, Scrum, NIST</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Experience -->
-  <section id="experience">
-    <h3>Professional Experience</h3>
-    <div class="card"><strong>EY GDS Argentina</strong> – Sr. Security Analyst (2024–Present)<br>Tier II analyst focusing on investigation, forensics, and incident response lifecycle.</div>
-    <div class="card"><strong>IT Formation</strong> – Cybersecurity Tutor (2023–2024)<br>Delivered training on cybersecurity fundamentals and awareness.</div>
-    <div class="card"><strong>Schneider Electric APU</strong> – Cybersecurity Consultant (2021–2024)<br>Developed cybersecurity opportunities in LATAM with IT/OT convergence.</div>
-    <div class="card"><strong>Accenture Argentina</strong> – Security Analyst (2019–2021)<br>Vulnerability analysis, malware investigation, SOC monitoring.</div>
-  </section>
-
-  <!-- Certifications -->
-  <section id="certifications">
-    <h3>Certifications</h3>
-    <div class="card">
-      <p>Cybersecurity Tools and Technologies (Microsoft), Security Operations (Microsoft), Access Control Concepts (Microsoft), Networking and Cloud Computing (Microsoft), Security Principles (Microsoft), Incident Response BC/DR (Microsoft), Network Security (Microsoft), Microsoft Defender Solutions, Information Security (UNITECNAR), Social Engineering, Cyber Network Security, Advanced Penetration Testing, CSFPC™, CompTIA Security+, Offensive Penetration Testing.</p>
-    </div>
-  </section>
-
-  <!-- Education -->
-  <section id="education">
-    <h3>Education</h3>
-    <div class="card">
-      <ul>
-        <li>MSc Information Security – UBA, Argentina (2023)</li>
-        <li>Specialist in Information Security – UBA (2019)</li>
-        <li>BSc Systems Engineering – Unitecnar, Colombia (2018)</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact">
-    <h3>Contact</h3>
-    <div class="card">
+    <img src="profile.jpg" alt="José Luis Mora">
+    <div>
+      <p>Analista de ciberseguridad con más de 6 años de experiencia en triage cibernético, respuesta a incidentes y análisis forense. Especializado en detección de amenazas, investigación y mitigación, con un historial comprobado de fortalecimiento de operaciones de seguridad y minimización de riesgos organizacionales.</p>
       <p>Email: <a href="mailto:engineermora@gmail.com">engineermora@gmail.com</a></p>
       <p>LinkedIn: <a href="https://www.linkedin.com/in/jose-mora-cybersecurity/">José Luis Mora Isaza</a></p>
     </div>
   </section>
 
+  <section id="skills">
+    <h3>Habilidades</h3>
+    <ul>
+      <li>SO: iOS, Windows, Linux</li>
+      <li>Herramientas de Seguridad: xSOAR, SIEM, CrowdStrike, Sentinel, Splunk, Microsoft Defender, Azure Security Center</li>
+      <li>Lenguajes: Python, Java, JavaScript, Bash, PowerShell, KQL</li>
+      <li>Frameworks: ISO 27000, SOC2, PCI-DSS, GDPR, PDCA, Scrum, NIST</li>
+    </ul>
+  </section>
+
   <footer>
-    © 2025 José Luis Mora – Cyber Triage & Forensics Sr. Security Analyst
+    <p>&copy; 2025 José Luis Mora – Cyber Security Analyst</p>
   </footer>
+
 </body>
 </html>
