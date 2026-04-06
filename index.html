@@ -49,161 +49,84 @@ footer{text-align:center;padding:1rem;background:var(--secondary-color);}
 </head>
 
 <body>
-
 <header>
-<h1>José Luis Mora</h1>
-<h2 id="title"></h2>
+<img src="9e33f6bf-22ed-4f07-a788-02f08afef2a2.jpeg" class="profile-pic" />
+<h1>José Luis Mora Isaza</h1>
+<h2>Cyber Triage and Forensics Security SR. Analyst | Threat Hunting | Incident Response | SOC | Master in Information Security</h2>
 
-<div class="lang">
-<button onclick="setLang('en')">EN</button>
-<button onclick="setLang('es')">ES</button>
-<button onclick="setLang('pt')">PT</button>
-</div>
+<a href="index.html">🇺🇸</a>
+<a href="es.html">🇪🇸</a>
+<a href="pt.html">🇧🇷</a>
+  
+<nav>
+<a href="#profile">Profile</a>
+<a href="#skills">Skills</a>
+<a href="#experience">Experience</a>
+<a href="#certifications">Certifications</a>
+<a href="#education">Education</a>
+<a href="#contact">Contact</a>
+</nav>
 </header>
 
-<section>
-
-<h3 id="profile-title"></h3>
-<div class="card" id="profile"></div>
-
-<h3 id="skills-title"></h3>
-<div class="card" id="skills"></div>
-
-<h3 id="exp-title"></h3>
-<div class="card" id="exp"></div>
-
-<h3 id="edu-title"></h3>
-<div class="card" id="edu"></div>
-
-<h3 id="contact-title"></h3>
-<div class="card" id="contact"></div>
-
+<section id="profile">
+<h3>Profile</h3>
+<div class="card">
+<p>Senior SOC / DFIR Analyst (Tier II) with end-to-end ownership of the incident lifecycle, from alert intake to containment and post-incident review.</p>
+<p>Hands-on experience with Microsoft Sentinel, Splunk, Defender, CrowdStrike and Cortex XSOAR in global environments.</p>
+<p>Strong background in threat hunting, MITRE ATT&CK mapping, and detection improvement across hybrid infrastructures.</p>
+</div>
 </section>
 
-<footer>
-<p id="footer-text"></p>
-<p>👀 Profile views: <span id="counter"></span></p>
-</footer>
-
-<script>
-const content = {
-
-en: {
-title:`Cyber Triage and Forensics SR Analyst | Threat Hunting | Incident Response | SOC`,
-profileTitle:`Profile`,
-profile:`<p>Senior SOC / DFIR Analyst (Tier II) with end-to-end ownership of the incident lifecycle, from alert intake and correlation to containment and eradication.</p>
-<p>Strong hands-on experience using SIEM, EDR and SOAR platforms such as Microsoft Sentinel, Splunk, Defender and Cortex XSOAR.</p>
-<p>Experienced in threat hunting, malware triage and MITRE ATT&CK mapping.</p>`,
-
-skillsTitle:`Knowledge & Skills`,
-skills:`<ul>
-<li><b>SOC & Incident Response:</b> triage, classification, containment.</li>
-<li><b>Threat Hunting:</b> KQL, SPL, IOC sweeps.</li>
-<li><b>Tools:</b> Sentinel, Splunk, Defender, CrowdStrike, XSOAR.</li>
-<li><b>Malware Analysis:</b> process trees, persistence, indicators.</li>
-</ul>`,
-
-expTitle:`Experience`,
-exp:`<p><b>EY GDS</b> – Cyber Triage Analyst</p>
+<section id="skills">
+<h3>Skills</h3>
+<div class="card">
 <ul>
-<li>High severity investigations</li>
-<li>Threat hunting with KQL</li>
-<li>Malware analysis</li>
-</ul>`,
+<li><strong>SOC & IR:</strong> triage, correlation, containment</li>
+<li><strong>Threat Hunting:</strong> KQL, SPL, IOC sweeps</li>
+<li><strong>Tools:</strong> Sentinel, Defender, Splunk, CrowdStrike, XSOAR</li>
+<li><strong>Forensics:</strong> process, registry, persistence, malware triage</li>
+<li><strong>Cloud:</strong> Azure & hybrid environments</li>
+<li><strong>Frameworks:</strong> MITRE ATT&CK, NIST, ISO 27001</li>
+</ul>
+</div>
+</section>
 
-eduTitle:`Education`,
-edu:`<ul>
-<li>MSc Information Security – UBA</li>
-<li>Systems Engineering – UNITECNAR</li>
-</ul>`,
-
-contactTitle:`Contact`,
-contact:`engineermora@gmail.com`,
-footer:`© 2026 José Mora`
-},
-
-es: {
-title:`Analista Senior en Ciberseguridad | SOC | Respuesta a Incidentes`,
-profileTitle:`Perfil`,
-profile:`<p>Analista SOC / DFIR (Tier II) con experiencia completa en el ciclo de vida de incidentes, desde la detección hasta la contención y erradicación.</p>
-<p>Experiencia en herramientas SIEM, EDR y SOAR como Microsoft Sentinel, Splunk y Defender.</p>
-<p>Especializado en threat hunting, análisis de malware y MITRE ATT&CK.</p>`,
-
-skillsTitle:`Habilidades`,
-skills:`<ul>
-<li><b>SOC & Respuesta a Incidentes:</b> triage y contención.</li>
-<li><b>Threat Hunting:</b> KQL, SPL.</li>
-<li><b>Herramientas:</b> Sentinel, Splunk, Defender.</li>
-<li><b>Malware:</b> análisis y detección.</li>
-</ul>`,
-
-expTitle:`Experiencia`,
-exp:`<p><b>EY</b> – Analista de Ciberseguridad</p>
+<section id="experience">
+<h3>Experience</h3>
+<div class="card">
+<strong>EY</strong> – Cyber Triage Sr. Analyst (2024–Present)
 <ul>
-<li>Investigaciones críticas</li>
-<li>Threat hunting</li>
-<li>Análisis de malware</li>
-</ul>`,
+<li>Advanced investigations and threat hunting</li>
+<li>KQL queries and IOC expansion</li>
+<li>Malware analysis and incident reporting</li>
+</ul>
+</div>
+</section>
 
-eduTitle:`Educación`,
-edu:`<ul>
-<li>Maestría en Seguridad – UBA</li>
-<li>Ingeniería de Sistemas – UNITECNAR</li>
-</ul>`,
+<section id="certifications">
+<h3>Certifications</h3>
+<div class="card">
+<p>Microsoft Security, CSFPC, Information Security Certification, and advanced cybersecurity training.</p>
+</div>
+</section>
 
-contactTitle:`Contacto`,
-contact:`engineermora@gmail.com`,
-footer:`© 2026 José Mora`
-},
+<section id="education">
+<h3>Education</h3>
+<div class="card">
+<ul>
+<li>MSc Information Security – Buenos Aires University</li>
+<li>Specialization Information Security – Buenos Aires University</li>
+<li>Systems Engineering – UNITECNAR Cartagena</li>
+</ul>
+</div>
+</section>
 
-pt: {
-title:`Analista Sênior de Cibersegurança | SOC | Resposta a Incidentes`,
-profileTitle:`Perfil`,
-profile:`<p>Analista SOC / DFIR com experiência completa no ciclo de incidentes.</p>
-<p>Experiência com SIEM, EDR e SOAR como Sentinel e Splunk.</p>`,
-
-skillsTitle:`Habilidades`,
-skills:`<ul>
-<li><b>Resposta a incidentes</b></li>
-<li><b>Threat Hunting</b></li>
-<li><b>SIEM / EDR</b></li>
-</ul>`,
-
-expTitle:`Experiência`,
-exp:`<p><b>EY</b> – Analista</p>`,
-
-eduTitle:`Educação`,
-edu:`Mestrado – UBA`,
-contactTitle:`Contato`,
-contact:`engineermora@gmail.com`,
-footer:`© 2026 José Mora`
-}
-};
-
-function setLang(lang){
-document.getElementById("title").innerHTML=content[lang].title;
-document.getElementById("profile-title").innerHTML=content[lang].profileTitle;
-document.getElementById("profile").innerHTML=content[lang].profile;
-document.getElementById("skills-title").innerHTML=content[lang].skillsTitle;
-document.getElementById("skills").innerHTML=content[lang].skills;
-document.getElementById("exp-title").innerHTML=content[lang].expTitle;
-document.getElementById("exp").innerHTML=content[lang].exp;
-document.getElementById("edu-title").innerHTML=content[lang].eduTitle;
-document.getElementById("edu").innerHTML=content[lang].edu;
-document.getElementById("contact-title").innerHTML=content[lang].contactTitle;
-document.getElementById("contact").innerHTML=content[lang].contact;
-document.getElementById("footer-text").innerHTML=content[lang].footer;
-}
-
-setLang("en");
-
-// contador
-let visits = localStorage.getItem("visits");
-visits = visits ? parseInt(visits)+1 : 1;
-localStorage.setItem("visits", visits);
-document.getElementById("counter").innerText = visits;
-
-</script>
-
+<section id="contact">
+<h3>Contact</h3>
+<div class="card">
+<p>Email: engineermora@gmail.com</p>
+<p>LinkedIn: José Mora</p>
+</div>
+</section>
 </body>
 </html>
