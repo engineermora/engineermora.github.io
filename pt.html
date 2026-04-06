@@ -1,209 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>José Luis Mora | Cyber Triage & Forensics Sr. Analyst</title>
+<html lang="pt">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>José Mora | Analista SR Cibersegurança</title>
 
-    <style>
-      :root {
-        --primary-color: #ffffff;
-        --secondary-color: #f4f6f9;
-        --accent-color: #008f5b;
-        --text-color: #1a1a1a;
-      }
+<style>
+:root {
+--primary-color: #ffffff;
+--secondary-color: #f4f6f9;
+--accent-color: #d90429;
+--text-color: #1a1a1a;
+}
+</style>
+</head>
 
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      }
+<body>
 
-      body {
-        background: var(--primary-color);
-        color: var(--text-color);
-        line-height: 1.6;
-      }
+<header>
+<h1>José Luis Mora</h1>
+<h2>Analista Sênior de Cibersegurança | SOC | Resposta a Incidentes</h2>
 
-      header {
-        background: var(--secondary-color);
-        padding: 2rem;
-        text-align: center;
-        position: sticky;
-        top: 0;
-        z-index: 1000;
-        border-bottom: 2px solid #e0e0e0;
-      }
+<nav>
+<a href="#profile">Perfil</a>
+<a href="#skills">Habilidades</a>
+<a href="#experience">Experiência</a>
+<a href="#education">Educação</a>
+<a href="#contact">Contato</a>
+</nav>
+</header>
 
-      header h1 {
-        font-size: 2rem;
-        margin-bottom: 0.5rem;
-      }
+<section id="profile">
+<h3>Perfil</h3>
+<div class="card">
+<p>Analista SOC/DFIR com experiência em resposta a incidentes e análise de ameaças.</p>
+</div>
+</section>
 
-      header h2 {
-        font-size: 1.1rem;
-        color: var(--accent-color);
-      }
+<section id="skills">
+<h3>Habilidades</h3>
+<ul>
+<li>Resposta a incidentes</li>
+<li>Threat Hunting</li>
+<li>SIEM / EDR</li>
+</ul>
+</section>
 
-      .profile-pic {
-        width: 120px;
-        height: 120px;
-        border-radius: 50%;
-        object-fit: cover;
-        border: 3px solid var(--accent-color);
-        margin-bottom: 1rem;
-      }
+<section id="experience">
+<h3>Experiência</h3>
+<div class="card">
+<p>EY – Analista de Cibersegurança</p>
+</div>
+</section>
 
-      nav {
-        margin-top: 1rem;
-      }
+<section id="education">
+<h3>Educação</h3>
+<p>Mestrado em Segurança da Informação – UBA</p>
+</section>
 
-      nav a {
-        margin: 0 1rem;
-        text-decoration: none;
-        color: var(--text-color);
-        transition: color 0.3s;
-      }
+<section id="contact">
+<h3>Contato</h3>
+<p>Email: engineermora@gmail.com</p>
+</section>
 
-      nav a:hover {
-        color: var(--accent-color);
-      }
-
-      section {
-        padding: 3rem 2rem;
-        max-width: 1000px;
-        margin: auto;
-      }
-
-      h3 {
-        font-size: 1.5rem;
-        margin-bottom: 1rem;
-        color: var(--accent-color);
-        border-bottom: 2px solid var(--accent-color);
-        display: inline-block;
-      }
-
-      .card {
-        background: var(--secondary-color);
-        padding: 1.5rem;
-        margin-bottom: 1.5rem;
-        border-radius: 10px;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s;
-      }
-
-      .card:hover {
-        transform: translateY(-5px);
-      }
-
-      ul {
-        list-style: none;
-        margin-left: 1rem;
-      }
-
-      li::before {
-        content: '➤';
-        color: var(--accent-color);
-        margin-right: 0.5rem;
-      }
-
-      footer {
-        background: var(--secondary-color);
-        text-align: center;
-        padding: 1rem;
-        color: #555;
-        font-size: 0.9rem;
-        border-top: 2px solid #e0e0e0;
-      }
-
-      /* 🌍 Language Switch */
-      .lang-switch {
-        position: absolute;
-        top: 20px;
-        right: 30px;
-      }
-
-      .lang {
-        text-decoration: none;
-        font-weight: bold;
-        margin-left: 8px;
-        padding: 6px 10px;
-        border-radius: 6px;
-        font-size: 12px;
-        color: white;
-        transition: all 0.3s ease;
-      }
-
-      .lang.en {
-        background-color: #008f5b;
-      }
-
-      .lang.es {
-        background-color: #1f4e79;
-      }
-
-      .lang.pt {
-        background-color: #c0392b;
-      }
-
-      .lang:hover {
-        opacity: 0.85;
-        transform: translateY(-2px);
-      }
-
-      .lang.active {
-        box-shadow: 0 0 0 2px #00000020;
-      }
-    </style>
-  </head>
-
-  <body>
-    <header>
-      <!-- 🌍 Language buttons -->
-      <div class="lang-switch">
-        <a href="index.html" class="lang en active">EN</a>
-        <a href="es.html" class="lang es">ES</a>
-        <a href="pt.html" class="lang pt">PT</a>
-      </div>
-
-      <img
-        src="9e33f6bf-22ed-4f07-a788-02f08afef2a2.jpeg"
-        class="profile-pic"
-      />
-
-      <h1>José Luis Mora Isaza</h1>
-
-      <h2>
-        Cyber Triage and Forensics Security SR. Analyst | Threat Hunting |
-        Incident Response | SOC | Master in Information Security
-      </h2>
-
-      <nav>
-        <a href="#profile">Profile</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#certifications">Certifications</a>
-        <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
-
-    <!-- (Todo tu contenido se mantiene EXACTAMENTE igual abajo) -->
-
-    <section id="profile">
-      <h3>Profile</h3>
-      <div class="card">
-        <p>
-          Senior SOC / DFIR Analyst (Tier II) with end-to-end ownership of the incident lifecycle...
-        </p>
-      </div>
-    </section>
-
-    <!-- Puedes dejar el resto tal cual lo tienes -->
-
-    <footer>
-      © 2026 José Luis Mora – Cyber Triage & Forensics Sr. Security Analyst
-    </footer>
-  </body>
+</body>
 </html>
