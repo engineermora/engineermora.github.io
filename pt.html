@@ -1,94 +1,243 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>José Mora | Analista SR Cibersegurança</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>José Luis Mora | Cyber Triage & Forensics Sr. Analyst</title>
 
-<style>
-:root {
---primary-color: #ffffff;
---secondary-color: #f4f6f9;
---accent-color: #d90429;
---text-color: #1a1a1a;
-}
-</style>
+  <style>
+    :root {
+      --primary-color: #ffffff;
+      --secondary-color: #f4f6f9;
+      --accent-color: #008f5b;
+      --text-color: #1a1a1a;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: var(--primary-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--secondary-color);
+      padding: 2rem;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 2px solid #e0e0e0;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header h2 {
+      font-size: 1.1rem;
+      color: var(--accent-color);
+    }
+
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--accent-color);
+      margin-bottom: 1rem;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: var(--text-color);
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent-color);
+    }
+
+    section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: var(--accent-color);
+      border-bottom: 2px solid var(--accent-color);
+      display: inline-block;
+    }
+
+    .card {
+      background: var(--secondary-color);
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    ul {
+      list-style: none;
+      margin-left: 1rem;
+    }
+
+    li::before {
+      content: '➤';
+      color: var(--accent-color);
+      margin-right: 0.5rem;
+    }
+
+    footer {
+      background: var(--secondary-color);
+      text-align: center;
+      padding: 1rem;
+      color: #555;
+      font-size: 0.9rem;
+      border-top: 2px solid #e0e0e0;
+    }
+  </style>
 </head>
 
 <body>
-<header>
-<img src="9e33f6bf-22ed-4f07-a788-02f08afef2a2.jpeg" class="profile-pic" />
-<h1>José Luis Mora Isaza</h1>
-<h2>Analista Sênior de Cibersegurança (DFIR & SOC) | Threat Hunting | Resposta a Incidentes | Mestre em Segurança da Informação</h2>
 
-<nav>
-<a href="#profile">Perfil</a>
-<a href="#skills">Competências</a>
-<a href="#experience">Experiência</a>
-<a href="#certifications">Certificações</a>
-<a href="#education">Formação</a>
-<a href="#contact">Contato</a>
-</nav>
-</header>
+  <header>
+    <img src="9e33f6bf-22ed-4f07-a788-02f08afef2a2.jpeg" alt="Profile Picture" class="profile-pic" />
+    
+    <h1>José Luis Mora Isaza</h1>
+    
+    <h2>
+      Cyber Triage and Forensics Security SR. Analyst | 
+      Threat Hunting | Incident Response | SOC | 
+      Master in Information Security
+    </h2>
+
+    <nav>
+      <a href="#profile">Perfil</a>
+      <a href="#skills">Conhecimentos Técnicos</a>
+      <a href="#experience">Experiência</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#education">Educação</a>
+      <a href="#contact">Informação de contato</a>
+    </nav>
+
+    <!-- 👇 AQUI VAN LOS BOTONES -->
+  <div style="margin-top: 10px;">
+    <a href="index.html">🇺🇸</a>
+    <a href="es.html" style="margin-left:10px;">🇪🇸</a>
+    <a href="pt.html" style="margin-left:10px;">🇧🇷</a>
+  </div>
+  </header>
 
 <section id="profile">
-<h3>Perfil</h3>
+<h3>Perfil:</h3>
 <div class="card">
-<p>Analista SOC / DFIR Sênior (Tier II) com experiência completa no ciclo de incidentes.</p>
-<p>Experiência prática com Microsoft Sentinel, Splunk, Defender, CrowdStrike e Cortex XSOAR.</p>
-<p>Foco em threat hunting, MITRE ATT&CK e melhoria contínua de detecções.</p>
+<p>Analista Sênior de Cibersegurança (SOC Nível II) com mais de 6 anos de experiência em monitoramento de segurança utilizando SIEM, threat hunting e resposta a incidentes em ambientes IT e OT. Especialista na detecção, investigação e contenção de ameaças avançadas, utilizando ferramentas SIEM, EDR e SOAR, além de plataformas de gestão de incidentes como ServiceNow e soluções de segurança em nuvem. Sólido domínio de tecnologias como Microsoft Sentinel, Microsoft Defender for Endpoint, Defender for Cloud, Azure Security, Splunk, Cortex XSOAR e CrowdStrike, aplicadas à análise, correlação e validação de eventos de segurança.
+</p>
+<p>Possui forte experiência na coleta e análise de evidências, bem como na gestão completa do ciclo de vida de incidentes, desde a detecção até a remediação e revisão pós-incidente. Focado na geração de insights acionáveis que reduzam riscos e aumentem a efetividade da resposta, atuando de forma colaborativa com equipes de SOC e operações para otimizar a cobertura de detecção e fortalecer a resiliência organizacional frente a ameaças cibernéticas.
+</p>
 </div>
 </section>
 
 <section id="skills">
-<h3>Competências</h3>
+<h3>Conhecimentos Técnicos.</h3>
 <div class="card">
 <ul>
-<li><strong>SOC & IR:</strong> triagem, correlação, contenção</li>
-<li><strong>Threat Hunting:</strong> KQL, SPL, IOC</li>
-<li><strong>Ferramentas:</strong> Sentinel, Defender, Splunk, CrowdStrike, XSOAR</li>
-<li><strong>Forense:</strong> processos, registro, persistência, malware</li>
-<li><strong>Cloud:</strong> Azure e ambientes híbridos</li>
+<li><strong>Metodologias e Frameworks:</strong> NIST Cybersecurity Framework, ISO 27001, IEC 62443, CIS Controls, PDCA, Scrum, MITRE ATT&CK.</li>
+<li><strong>Threat Hunting:</strong> Microsoft Sentinel – Arena. </li>
+<li><strong>Ferramentas:</strong> Microsoft Sentinel, Splunk, CrowdStrike Falcon, Microsoft Defender for Endpoint (MDE), Cortex XSOAR, Azure Cloud, Microsoft Email Explorer.</li>
+<li><strong>Networking:</strong> Análise de tráfego de rede, firewalls, proteção de endpoints, convergência de segurança IT/OT, segurança de infraestruturas críticas e soluções Nozomi e Claroty.</li>
+<li><strong>Sistemas de Tickets:</strong> ServiceNow.</li>
+<li><strong>Cloud:</strong> Azure</li>
 <li><strong>Frameworks:</strong> MITRE ATT&CK, NIST, ISO 27001</li>
 </ul>
 </div>
 </section>
 
 <section id="experience">
-<h3>Experiência</h3>
+<h3>Experiência.</h3>
 <div class="card">
-<strong>EY</strong> – Analista Sênior (2024–Atual)
+<strong>EY</strong> – Analista Sênior de Cyber Triage e Forense de Segurança (2024–Present)
 <ul>
-<li>Investigações avançadas e threat hunting</li>
-<li>Consultas KQL e expansão de IOC</li>
-<li>Análise de malware e relatórios</li>
+<li>Gestão do ciclo de vida completo dos incidentes, desde a triagem até a revisão pós-incidente, garantindo que as decisões estejam alinhadas ao impacto no negócio e à exposição ao risco.</li>
+<li>Priorização de alertas com base no contexto, criticidade dos ativos e intenção da ameaça, permitindo que o SOC foque nos incidentes mais relevantes.</li>
+<li>Tradução de achados técnicos em orientações claras de remediação para equipes de engenharia e TI, melhorando a consistência da resposta em diferentes ambientes.</li>
+<li>Padronização de playbooks e fluxos de escalonamento no Cortex XSOAR e ServiceNow, reduzindo atritos nas investigações e fortalecendo a coordenação entre equipes.</li>
+<li>Identificação de lacunas recorrentes durante incidentes e proposição de controles preventivos, contribuindo para a melhoria contínua das estratégias de detecção.</li>
 </ul>
+<strong>IT Formation | Espanha – Remoto </strong> - Instrutor de Cibersegurança / Tutor Técnico | 2023 – 2024.
+<ul>
+<li> Ministrou programas de treinamento em cibersegurança cobrindo fundamentos de segurança, resposta a incidentes e operações SOC para profissionais de TI.</li>
+<li> Desenvolveu e conduziu cursos alinhados a padrões da indústria, incluindo Cybersecurity Fundamentals (CSFPC) e conceitos de detecção de ameaças.</li>
+  
+<strong>Schneider Electric | Argentina, Paraguai e Uruguai </strong> – Consultor de Cibersegurança (Segurança IT/OT) | Jun 2021 – Abr 2024.
+<ul>
+<li>Convergência IT/OT: Apoio a clientes na avaliação de riscos cibernéticos em ambientes industriais e orientação de decisões para integrar IT e OT de forma segura, sem impactar as operações.</li>
+<li>Pré-vendas técnicas: Assessoria a equipes de vendas e engenharia na definição de arquiteturas de segurança viáveis, equilibrando necessidades de segurança, requisitos operacionais e exigências regulatórias.</li>
+<li>Estratégia de soluções: Contribuição na definição de ofertas de serviços de segurança, trazendo experiência prática de incidentes para discussões sobre monitoramento, segmentação de rede e prontidão para incidentes em infraestruturas críticas.</li>
+<li>Colaboração regional: Atuação com equipes de diferentes países para alinhar abordagens de segurança, compartilhar lições aprendidas e garantir execução consistente em múltiplos projetos e clientes.</li>
+
+<strong>Accenture Argentina</strong> – Analista de Segurança (SOC Analyst) | Set 2019 – Jun 2021
+<ul>
+<li> Realização de monitoramento SOC e triagem de alertas, priorizando conforme a criticidade dos ativos e o contexto da ameaça, focando esforços nos incidentes mais relevantes. </li>
+<li>Supervisão dos fluxos operacionais diários do SOC com foco na qualidade das investigações, contribuindo para padronizar a classificação e garantir escalonamentos consistentes e bem justificados. </li>
+<li>Identificação de padrões em atividades de phishing e malware, recomendando ações preventivas que reduziram ciclos repetitivos de investigação.</li>
+<li>Colaboração com responsáveis por plataformas para aprimorar regras e fluxos de resposta, alinhando a lógica de detecção ao comportamento real das operações.</li>
+<li>Manutenção de documentação clara para suporte a auditorias, compartilhamento de conhecimento e melhoria contínua das práticas de investigação.</li>
 </div>
 </section>
 
 <section id="certifications">
-<h3>Certificações</h3>
+<h3>Cursos</h3>
 <div class="card">
-<p>Certificações Microsoft Security, CSFPC e treinamentos avançados em cibersegurança.</p>
+<li> APT27 Examination training – Cloud Range, Cyber Security Foundation (CSFPC™) – CertiProf, Incident Response, Business Continuity & Disaster Recovery – ISC², Cybersecurity Solutions and Microsoft Defender – Microsoft, Cyber Defense Operations – EY, Professional, Cybersecurity Tools and Technologies (Microsoft), Security Operations (Microsoft), Access Control Concepts (Microsoft), Networking and Cloud Computing (Microsoft), Security Principles (Microsoft), Diplomado em Segurança Informática – UNITECNAR</li>
+
 </div>
 </section>
 
 <section id="education">
-<h3>Formação</h3>
+<h3>Educação</h3>
 <div class="card">
+  <strong>Universidade de Buenos Aires (UBA) — Argentina </strong> 
 <ul>
-<li>Mestrado em Segurança da Informação – UBA</li>
-<li>Especialização em Segurança da Informação – UBA</li>
-<li>Engenharia de Sistemas – UNITECNAR</li>
+<li> Mestrado em Segurança da Informação</li>
+<li>Especialização em Segurança da Informação</li>
+
+<strong>Universidade Antonio de Arévalo – UNITECNAR — Colômbia</strong> 
+<ul>
+<li> Engenheiro de Sistemas</li>
+<li> Tecnólogo em Sistemas</li>
+<li>Técnico Profissional em Computação</li>
 </ul>
 </div>
 </section>
 
 <section id="contact">
-<h3>Contato</h3>
+<h3>Informação de contato</h3>
 <div class="card">
-<p>Email: engineermora@gmail.com</p>
-<p>LinkedIn: José Mora</p>
+<p>E-mail: engineermora@gmail.com</p>
+  <a href="mailto:engineermora@gmail.com"> Converse com José Mora </a>
+<p> LinkedIn: <a href="https://www.linkedin.com/in/jose-mora-cybersecurity/"> José Luis Mora Isaza </a> </p>
 </div>
 </section>
 </body>
