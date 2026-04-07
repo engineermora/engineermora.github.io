@@ -1,72 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>José Mora | Cybersecurity</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>José Luis Mora | Cyber Triage & Forensics Sr. Analyst</title>
 
-<style>
-:root {
---primary-color:#fff;
---secondary-color:#f4f6f9;
---accent-color:#008f5b;
---text-color:#1a1a1a;
-}
+  <style>
+    :root {
+      --primary-color: #ffffff;
+      --secondary-color: #f4f6f9;
+      --accent-color: #008f5b;
+      --text-color: #1a1a1a;
+    }
 
-body {margin:0;font-family:Segoe UI;background:var(--primary-color);color:var(--text-color);}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
 
-header {
-background:var(--secondary-color);
-padding:2rem;
-text-align:center;
-}
+    body {
+      background: var(--primary-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
 
-h2{color:var(--accent-color);}
+    header {
+      background: var(--secondary-color);
+      padding: 2rem;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 2px solid #e0e0e0;
+    }
 
-.lang button{
-margin:5px;
-padding:8px 12px;
-border:none;
-background:var(--accent-color);
-color:white;
-cursor:pointer;
-border-radius:5px;
-}
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
 
-section{padding:2rem;max-width:1000px;margin:auto;}
+    header h2 {
+      font-size: 1.1rem;
+      color: var(--accent-color);
+    }
 
-.card{
-background:var(--secondary-color);
-padding:1.5rem;
-border-radius:10px;
-margin-bottom:1rem;
-}
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--accent-color);
+      margin-bottom: 1rem;
+    }
 
-ul{padding-left:20px;}
+    nav {
+      margin-top: 1rem;
+    }
 
-footer{text-align:center;padding:1rem;background:var(--secondary-color);}
-</style>
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: var(--text-color);
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent-color);
+    }
+
+    section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: var(--accent-color);
+      border-bottom: 2px solid var(--accent-color);
+      display: inline-block;
+    }
+
+    .card {
+      background: var(--secondary-color);
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    ul {
+      list-style: none;
+      margin-left: 1rem;
+    }
+
+    li::before {
+      content: '➤';
+      color: var(--accent-color);
+      margin-right: 0.5rem;
+    }
+
+    footer {
+      background: var(--secondary-color);
+      text-align: center;
+      padding: 1rem;
+      color: #555;
+      font-size: 0.9rem;
+      border-top: 2px solid #e0e0e0;
+    }
+  </style>
 </head>
 
 <body>
-<header>
-<img src="9e33f6bf-22ed-4f07-a788-02f08afef2a2.jpeg" class="profile-pic" />
-<h1>José Luis Mora Isaza</h1>
-<h2>Cyber Triage and Forensics Security SR. Analyst | Threat Hunting | Incident Response | SOC | Master in Information Security</h2>
 
-<a href="index.html">🇺🇸</a>
-<a href="es.html">🇪🇸</a>
-<a href="pt.html">🇧🇷</a>
-  
-<nav>
-<a href="#profile">Profile</a>
-<a href="#skills">Skills</a>
-<a href="#experience">Experience</a>
-<a href="#certifications">Certifications</a>
-<a href="#education">Education</a>
-<a href="#contact">Contact</a>
-</nav>
-</header>
+  <header>
+    <img src="9e33f6bf-22ed-4f07-a788-02f08afef2a2.jpeg" alt="Profile Picture" class="profile-pic" />
+    
+    <h1>José Luis Mora Isaza</h1>
+    
+    <h2>
+      Cyber Triage and Forensics Security SR. Analyst | 
+      Threat Hunting | Incident Response | SOC | 
+      Master in Information Security
+    </h2>
+
+    <nav>
+      <a href="#profile">Profile</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- 👇 AQUI VAN LOS BOTONES -->
+  <div style="margin-top: 10px;">
+    <a href="index.html">🇺🇸</a>
+    <a href="es.html" style="margin-left:10px;">🇪🇸</a>
+    <a href="pt.html" style="margin-left:10px;">🇧🇷</a>
+  </div>
+  </header>
 
 <section id="profile">
 <h3>Profile</h3>
